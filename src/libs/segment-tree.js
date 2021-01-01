@@ -33,6 +33,21 @@ class SegmentTree {
 
     return leftNode + rightNode;
   }
+
+  put(index, value) {
+    const gap = (this.target[index] - value) * -1;
+    this.rebuildTree(0, this.target.length - 1, 0, index, gap);
+  }
+
+  rebuildTree(left, right, index, putPosition, gap) {
+    if (putPosition < left || putPosition > right) return;
+
+    this.tree[index] += gap;
+    if (left === right) return;
+    const mid = (left + right) >> 1;
+    this.rebuildTree(left, mid, index * 2 + 1, putPosition, gap);
+    this.rebuildTree(mid + 1, right, index * 2 + 2, putPosition, gap);
+  }
 }
 
 module.exports = SegmentTree;
