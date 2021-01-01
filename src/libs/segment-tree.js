@@ -7,7 +7,6 @@ class SegmentTree {
   }
   init(index, left, right) {
     if (left === right) {
-      https://github.com/rolled-potatoes/alg
       this.tree[index] = this.target[left];
       return this.target[left];
     }
