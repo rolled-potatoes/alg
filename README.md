@@ -20,3 +20,11 @@
 - [세그먼트 트리 사용](src/libs/segment-tree.js)
 
 > [코드 링크](src/answers/풍선터트리기.js)
+
+### 2020/01/01
+
+[프로그래머스 가장먼노드](https://programmers.co.kr/learn/courses/30/lessons/49189)
+
+- bfs를 사용하여 특정 노드에서 거리 추출
+
+> [코드 링크](src/answers/가장먼노드.js)
