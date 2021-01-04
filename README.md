@@ -21,7 +21,7 @@
 
 > [코드 링크](src/answers/풍선터트리기.js)
 
-### 2020/01/01
+### 2020/01/04
 
 [프로그래머스 가장먼노드](https://programmers.co.kr/learn/courses/30/lessons/49189)
 
